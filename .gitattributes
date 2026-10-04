@@ -1,0 +1,12 @@
+# Keep LF in every checkout so file bytes and SHA-256 records stay stable across platforms.
+* text=auto eol=lf
+# CSV views are written with CRLF (RFC 4180) by tools/project.py export-csv; store bytes unchanged.
+*.csv -text
+*.xlsx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tif binary
+*.tiff binary
+*.zip binary
